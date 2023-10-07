@@ -1,0 +1,46 @@
+
+
+.subscribe_container {
+  text-align: center;
+  margin: 0px auto;
+  padding: 60px 30px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  max-width: 600px;
+  width: calc(100% - 5%);
+  border-radius: 5px;
+}
+
+.subscribe_container h1,
+.subscribe_container p{
+  color: white;
+}
+
+.subscribe_container form {
+  margin-top: 20px;
+  display: flex;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.subscribe_container form input {
+  height: 40px;
+  border-radius: 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.subscribe_container form button {
+  padding: 0 20px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+

@@ -1,0 +1,115 @@
+.product_container {
+  padding: 50px 5%;
+}
+
+.product_display {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.product_preview {
+  width: 500px;
+  min-width: 500px;
+  height: 480px;
+  display: flex;
+  gap: 15px;
+}
+
+.images_container {
+  height: 100%;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid gainsboro;
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_card {
+  width: 100%;
+  height: 120px;
+  background-color: whitesmoke;
+  border: 1px solid gainsboro;
+}
+
+.description {
+  max-width: 500px;
+}
+
+.description h1 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 18px;
+}
+
+.description button {
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 15px;
+  margin-top: 10px;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .product_preview {
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .product_preview {
+    width: 500px;
+    min-width: 500px;
+    height: 480px;
+  }
+  .product_display {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .description {
+    max-width: 400px;
+  }
+  .product_preview {
+    width: 400px;
+    max-width: 400px;
+    min-width: calc(100vw - (10% - 15px)) ;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .images_container {
+    width: 80px;
+  }
+  .img_card {
+    height: 100px;
+  }
+  .img{
+    max-width: 270px;
+    height: 350px;
+  }
+}

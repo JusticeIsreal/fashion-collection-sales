@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Product Sans", sans-serif !important;
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Regular.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 250;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Thin.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Light.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Medium.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Bold.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.cdnfonts.com/s/14955/ProductSans-Black.woff)
+    format("woff");
+}
+
+.app_container{
+  max-width: 1450px;
+  margin: 0px auto;
+}
+
+.logo {
+  font-family: "Playfair Display", serif !important;
+}
+
+
+
+.category {
+  padding: 50px 5%;
+  margin-top: 50px;
+  background-color: whitesmoke;
+}
+
+.category .category_container {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  margin-top: 30px;
+  gap: 15px;
+  overflow: auto;
+}
+
+.category .category_container::-webkit-scrollbar{
+  display: none;
+  opacity: 0;
+  visibility: none;
+}
+
+.category .category_container .card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 5px 20px;
+  position: relative;
+  width: 200px;
+  max-width: 200px;
+  min-width: 180px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+
+.category .category_container .card .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.category .category_container .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category .category_container .card .img::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+.category .category_container .card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.popular {
+  margin: 50px 5%;
+}
+
+.popular .popular_container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+
+
+
+
+
+.products {
+  padding: 0px 5%;
+  width: 100%;
+
+}
+
+.products_container {
+  display: flex;
+  width: 100%;
+}
+
+.products_filter_bar {
+  min-width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.products_container .popular .popular_container {
+  max-width: 900px;
+  width: 100% !important;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.products_container .popular {
+  padding: 50px 0px;
+  margin: 0;
+  width: 100% !important;
+}
+
+
+
+@media screen and (max-width: 1150px){
+  .popular .popular_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px){
+  .popular .popular_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px){
+  .popular .popular_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

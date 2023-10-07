@@ -1,0 +1,67 @@
+.footer{
+    background-color: whitesmoke;
+    padding: 100px 5%;
+  }
+  
+.footer .top_content{
+    display: flex;
+    gap: 40%;  
+  }
+  
+.footer .logo{
+    font-family: 'Playfair Display', serif !important;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+.footer .footer_more{
+    display: flex;
+    gap: 40px;
+  }
+  
+.footer .footer_more h4{
+    margin-bottom: 15px;
+  }
+  
+.footer .footer_more li{
+    margin: 10px 0;
+  }
+  
+  .footer .footer_more li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+  }
+  
+.footer .socials_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    color: black;
+    margin-top: 10px;
+  }
+  
+.footer .socials_container a{
+    color: black;
+  
+  }
+  
+.footer .socials_container a svg{
+    font-size: 30px;
+  }
+  
+  @media screen and (max-width: 970px){
+    .footer .top_content{
+      gap: 20%;
+    }
+  }
+
+  @media screen and (max-width: 755px){
+    .footer .top_content{
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
