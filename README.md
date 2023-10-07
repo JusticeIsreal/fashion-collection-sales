@@ -1,3 +1,3 @@
-# Calm Waters Ltd - Your Marine Servicing Partner
+# Fashion line Inc - Your fashion Partners
 
 ![Calm Waters Ltd](public/readMe.png)# fashion-collection-sales
